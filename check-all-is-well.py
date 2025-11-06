@@ -23,7 +23,7 @@ except Exception as e:
 
 # Retrieve public IP
 try:
-    public_ip = requests.get('https://checkip.amazonaws.com').text.strip()
+    public_ip = requests.get("https://checkip.amazonaws.com").text.strip()
     print(f"Your Computer Public IP Address is: {public_ip}")
 except Exception as e:
     print(f"Error retrieving public IP: {e}")
@@ -41,7 +41,7 @@ except Exception as e:
     print(f"Error retrieving nmap version: {e}")
 
 # Perform a top ports scan
-url = 'aliencoders.org'
+url = "aliencoders.org"
 try:
     print(f"Starting nmap scan for URL: {url}")
     top_ports = nmap.scan_top_ports(url, args="-sV")
