@@ -20,4 +20,3 @@ def draw_art():
 
 draw_art()
 
-
